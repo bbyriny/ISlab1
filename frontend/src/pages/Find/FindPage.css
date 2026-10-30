@@ -1,0 +1,20 @@
+.find-form {
+    align-items: flex-start;
+}
+
+.find-form .btn {
+    margin-top: 23px;
+}
+
+.find-field {
+    flex: 1;
+    min-width: 220px;
+}
+
+.find-field label {
+    margin: 0;
+}
+
+.find-result .panel-head h2 {
+    word-break: break-word;
+}

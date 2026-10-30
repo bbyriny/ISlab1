@@ -1,0 +1,69 @@
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 16px;
+    align-items: start;
+}
+
+.grid-2 .panel {
+    margin-bottom: 0;
+}
+
+.big-number {
+    font-size: 2rem;
+    font-weight: 750;
+    color: #c9b4ff;
+    margin-top: 12px;
+}
+
+.big-number .muted {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.mini-list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.mini-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 10px;
+}
+
+.inline-form {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.inline-form label {
+    display: block;
+    font-size: 0.86rem;
+    color: #cdbcf7;
+    margin: 0 0 5px;
+}
+
+.inline-form .grow, .inline-form > label {
+    flex: 1;
+}
+
+.inline-form input {
+    margin-top: 5px;
+}
+
+.inline-form .btn {
+    height: 40px;
+    margin-top: 23px;
+}

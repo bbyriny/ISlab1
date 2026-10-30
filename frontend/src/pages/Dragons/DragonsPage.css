@@ -1,0 +1,12 @@
+.chips {
+    margin-bottom: 12px;
+}
+
+.chip {
+    display: inline-block;
+    background: var(--accent-soft);
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    padding: 3px 12px;
+    font-size: 0.85rem;
+}

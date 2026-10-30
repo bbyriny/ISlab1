@@ -1,0 +1,74 @@
+input, select, textarea {
+    width: 100%;
+    background: #0d0819;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 9px 11px;
+    font: inherit;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #6d6188;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+input.invalid, select.invalid, textarea.invalid,
+input[aria-invalid="true"], select[aria-invalid="true"], textarea[aria-invalid="true"] {
+    border-color: var(--danger);
+    box-shadow: 0 0 0 3px var(--danger-soft);
+}
+
+select option {
+    background: #150e26;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="date"] {
+    color-scheme: dark;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.field label {
+    display: block;
+    font-size: 0.86rem;
+    color: #cdbcf7;
+    margin-bottom: 5px;
+}
+
+.req {
+    color: var(--danger);
+}
+
+.field-hint {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+
+.field-error {
+    color: #ff8fa5;
+    font-size: 0.82rem;
+    margin-top: 4px;
+    display: block;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 4px;
+}

@@ -1,0 +1,91 @@
+.visual-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 16px;
+    align-items: start;
+}
+
+.visual-canvas, .visual-side {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px;
+}
+
+.visual-canvas svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.svg-bg {
+    fill: #0d0819;
+}
+
+.svg-grid {
+    stroke: #23193b;
+    stroke-width: 1;
+}
+
+.svg-tick {
+    fill: #8175a3;
+    font-size: 12px;
+}
+
+.svg-axis {
+    fill: #b79cff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.svg-label {
+    fill: #cdbcf7;
+    font-size: 11px;
+    pointer-events: none;
+}
+
+.dot {
+    cursor: pointer;
+}
+
+.dot .body {
+    stroke: rgba(255, 255, 255, 0.55);
+    stroke-width: 1.5;
+    transition: stroke-width 0.15s;
+}
+
+.dot:hover .body, .dot:focus-visible .body {
+    stroke: #fff;
+    stroke-width: 3;
+}
+
+.dot.sel .body {
+    stroke: #fff;
+    stroke-width: 4;
+}
+
+.dot:focus {
+    outline: none;
+}
+
+.legend {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 0.85rem;
+}
+
+.visual-side h3 {
+    font-size: 1.05rem;
+    color: #fff;
+}
+
+.side-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 14px;
+}

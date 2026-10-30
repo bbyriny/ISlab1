@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", "Inter", system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+h1 {
+    font-size: 1.6rem;
+    margin: 0 0 4px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-size: 1.15rem;
+    margin: 0 0 6px;
+    font-weight: 650;
+}
+
+h3 {
+    font-size: 0.98rem;
+    margin: 0 0 8px;
+    font-weight: 650;
+    color: #cdbcf7;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+a {
+    color: #b79cff;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+:focus-visible {
+    outline: 2px solid #b79cff;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}

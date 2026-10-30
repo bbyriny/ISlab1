@@ -1,0 +1,15 @@
+.kv {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 5px 14px;
+    margin: 0;
+}
+
+.kv dt {
+    color: var(--muted);
+}
+
+.kv dd {
+    margin: 0;
+    word-break: break-word;
+}

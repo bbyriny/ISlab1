@@ -1,0 +1,10 @@
+package org.bbyriny.backend.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import org.bbyriny.backend.entity.Coordinates;
+
+@Repository
+public interface CoordinatesRepository extends JpaRepository<Coordinates, Long> {
+
+}

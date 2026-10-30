@@ -1,0 +1,12 @@
+.ref-row {
+    display: flex;
+    gap: 8px;
+}
+
+.ref-row select {
+    flex: 1;
+}
+
+.ref-row .btn {
+    white-space: nowrap;
+}

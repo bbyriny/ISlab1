@@ -1,0 +1,7 @@
+.helper-table th, .helper-table td {
+    min-width: 90px;
+}
+
+.helper-table th:first-child, .helper-table td:first-child {
+    min-width: 60px;
+}
